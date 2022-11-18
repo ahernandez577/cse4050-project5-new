@@ -9,7 +9,7 @@
 (function() {
 
   var tasks = [
-      {"_id":"1", "type_id":"1", "description":"Study javascript"},
+      {"_id":"1", "type_id":"1", "description":"Study Javascript"},
       {"_id":"2", "type_id":"2", "description":"Study JSON"},
       {"_id":"3", "type_id":"3", "description":"Study HTML"},
       {"_id":"4", "type_id":"3", "description":"Study CSS"},

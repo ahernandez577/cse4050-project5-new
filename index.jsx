@@ -4,10 +4,10 @@ import { HashRouter, Routes, Route} from "react-router-dom";
 import CssBaseline from '@mui/material/CssBaseline';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 
-import TopBar from './components/topBar/TopBar';
-import Home from './components/home/Home';
-import TaskList from './components/task/TaskList';
-import Task from './components/task/Task';
+import TopBar from './app/views/components/topBar/TopBar';
+import Home from './app/views/home/Home';
+import TaskList from './app/views/components/task/TaskList';
+import Task from './app/views/components/task/Task';
 
 const theme = createTheme({
   palette: {
