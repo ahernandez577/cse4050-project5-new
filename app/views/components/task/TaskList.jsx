@@ -15,8 +15,6 @@ class TaskList extends React.Component {
     super(props);
     this.state = {
       inputLetters: '',
-      tasks:window.cse4050models.taskListModel(),
-      taskTypes:window.cse4050models.taskTypeListModel(),
     };
   }
 

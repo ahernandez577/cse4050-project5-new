@@ -12,26 +12,17 @@
 /* jshint node: true */
 
 var express = require('express');
+const {router} = require("./app/controllers/routes/api")
 
 var portno = 3000;   // Port number to use
 
 var app = express();
 
-var cse4050models = require('./app/models/kanbanApp.js').cse4050models;
-
 // We have the express static module (http://expressjs.com/en/starter/static-files.html) do all
 // the work for us.
 app.use(express.static(__dirname));
 
-app.get('/api/tasks', function (request, response) {
-  response.status(200).send(cse4050models.taskListModel());
-  return;
-});
-
-app.get('/api/task-types', function (request, response) {
-  response.status(200).send(cse4050models.taskTypeListModel());
-  return;
-});
+app.use("/api", router)
 
 var server = app.listen(portno, function () {
   var port = server.address().port;

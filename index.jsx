@@ -6,7 +6,6 @@ import { ThemeProvider, createTheme } from '@mui/material/styles';
 
 import TopBar from './app/views/components/topBar/TopBar';
 import Home from './app/views/home/Home';
-import TaskList from './app/views/components/task/TaskList';
 import Task from './app/views/components/task/Task';
 
 const theme = createTheme({
