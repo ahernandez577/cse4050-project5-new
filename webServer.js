@@ -17,7 +17,7 @@ var portno = 3000;   // Port number to use
 
 var app = express();
 
-var cse4050models = require('./app/models/modelData/kanbanApp.js').cse4050models;
+var cse4050models = require('./app/models/kanbanApp.js').cse4050models;
 
 // We have the express static module (http://expressjs.com/en/starter/static-files.html) do all
 // the work for us.
